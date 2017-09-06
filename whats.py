@@ -9,7 +9,7 @@ def index():
 @app.route('/process', methods=['POST'])
 def create_user():
     name = request.form['name']
-    print name
+    print request.form
 
    # redirects back to the '/' route
     return redirect('/')
